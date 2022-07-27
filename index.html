@@ -9,15 +9,25 @@
 
     <title>My Personal Web Developer Portofolio</title>
 
-    <link rel="stylesheet" href="home_style.css" />
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixelated" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" media="screen" 
+          href="https://fontlibrary.org//face/jellee-typeface" type="text/css" />
 </head>
 <body>
     <header>
 
         <img id="logo" src="img/logo.png" />
 
-        <!-- navigation Menu in the header section -->
+        <!-- Toogle Menu designed for mobile-->
+        <div class="mobile_nav" onclick="toogleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+
+
+        <!-- navigation Menu in the header section for desktop -->
         <nav>
             <ul>
                 <li class="active">Home</li>
