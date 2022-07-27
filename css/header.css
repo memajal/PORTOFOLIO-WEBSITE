@@ -23,11 +23,25 @@ header img{
     height:70px;
 }
 
-header nav {
-    position:absolute;
-    overflow:hidden;
-    width: 100%;
-}
+    /* navbar for mobile design */
+    header .mobile_nav {
+        position: absolute;
+        display: none;
+    }
+
+    header .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #00ffff;
+        margin: 6px 0; 
+    }
+
+    /* navbar for desktop design */
+    header nav {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
 
 header ul {
     display: flex;
@@ -49,7 +63,127 @@ li {
     color: #00ffff;
 }
 
-
+/* css header design for small screen sizes: 0-320px, */
 @media all and (min-width:0px) and (max-width: 320px) {
 
+    header {
+        height: 70px;
+    }
+
+     header img {
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        header .mobile_nav {
+            display: block;
+            top: 10px;
+            right: 10px;
+        }
+
+    header nav {
+            display: none;
+        }
 }
+
+/* css header design for small screen sizes: 321-480px, */
+@media all and (min-width:321px) and (max-width: 480px) {
+
+    header {
+        height: 70px;
+    }
+
+        header img {
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        header .mobile_nav {
+            display: block;
+            top: 10px;
+            right: 15px;
+        }
+
+        header nav {
+            display: none;
+        }   
+}
+/* css header design for small screen sizes: 480-568px, */
+@media all and (min-width:481px) and (max-width: 568px) {
+    header {
+        height: 70px;
+    }
+
+        header img {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        header .mobile_nav {
+            display: block;
+            top: 10px;
+            right: 20px;
+        }
+
+        header nav {
+            display: none;
+        }  
+    
+}
+
+/* css header design for small screen sizes: 569-768px, */
+@media all and (min-width:569px) and (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+        header img {
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 15px;
+            width: 50px;
+            height: 50px;
+        }
+
+        header .mobile_nav {
+            display: block;
+            top: 15px;
+            right: 30px;
+        }
+
+        header nav {
+            display: none;
+        }  
+    
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+    
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+  
+}
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
