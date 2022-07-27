@@ -63,120 +63,95 @@ li {
     color: #00ffff;
 }
 
-/* css header design for small screen sizes: 0-320px, */
-@media all and (min-width:0px) and (max-width: 320px) {
+/* css the same header design for mobile screen sizes from 0-568px, */
+@media all and (min-width:0px) and (max-width: 568px) {
 
     header {
         height: 70px;
     }
 
-     header img {
-            position: absolute;
-            margin-left: 10px;
-            margin-top: 10px;
-            width: 50px;
-            height: 50px;
-        }
+    header img {
+       position: absolute;
+       margin-top: 10px;
+       width: 50px;
+       height: 50px;
+    }
 
-        header .mobile_nav {
-            display: block;
-            top: 10px;
-            right: 10px;
-        }
+    header .mobile_nav {
+     display: block;
+     top: 10px;
+    }
 
     header nav {
             display: none;
-        }
+    }
 }
 
-/* css header design for small screen sizes: 321-480px, */
+/* css the different header design for small screen sizes from 0-320px, */
+@media all and (min-width:0px) and (max-width: 320px) {
+            header img {
+                margin-left: 10px;
+            }
+            header .mobile_nav {
+                right: 10px;
+            }
+}
+
+/* css the different header design for small screen sizes from 321-480px, */
 @media all and (min-width:321px) and (max-width: 480px) {
+            header img {
+                margin-left: 15px;
+            }
+            header .mobile_nav {
+                right: 15px;
+            }
+}
 
-    header {
-        height: 70px;
+/* css the different header design for small screen sizes from 481-568px, */
+    @media all and (min-width:481px) and (max-width: 568px) {
+            header img {
+                margin-left: 20px;
+            }
+
+            header .mobile_nav {
+                right: 20px;
+            }
     }
 
-        header img {
-            position: absolute;
-            margin-left: 15px;
-            margin-top: 10px;
-            width: 50px;
-            height: 50px;
+/* css header design for tablet screen sizes: 569-768px, */
+    @media all and (min-width:569px) and (max-width: 768px) {
+        header {
+            height: 80px;
         }
 
-        header .mobile_nav {
-            display: block;
-            top: 10px;
-            right: 15px;
-        }
+            header img {
+                position: absolute;
+                margin-left: 30px;
+                margin-top: 15px;
+                width: 50px;
+                height: 50px;
+            }
 
-        header nav {
-            display: none;
-        }   
-}
-/* css header design for small screen sizes: 480-568px, */
-@media all and (min-width:481px) and (max-width: 568px) {
-    header {
-        height: 70px;
+            header .mobile_nav {
+                display: block;
+                top: 15px;
+                right: 30px;
+            }
+
+            header nav {
+                display: none;
+            }
     }
 
-        header img {
-            position: absolute;
-            margin-left: 20px;
-            margin-top: 10px;
-            width: 50px;
-            height: 50px;
-        }
-
-        header .mobile_nav {
-            display: block;
-            top: 10px;
-            right: 20px;
-        }
-
-        header nav {
-            display: none;
-        }  
-    
-}
-
-/* css header design for small screen sizes: 569-768px, */
-@media all and (min-width:569px) and (max-width: 768px) {
-    header {
-        height: 80px;
+/* css header design for other desktop screen sizes */
+    @media all and (min-width:769px) and (max-width: 800px) {
     }
 
-        header img {
-            position: absolute;
-            margin-left: 30px;
-            margin-top: 15px;
-            width: 50px;
-            height: 50px;
-        }
+    @media all and (min-width:801px) and (max-width: 959px) {
+    }
 
-        header .mobile_nav {
-            display: block;
-            top: 15px;
-            right: 30px;
-        }
-
-        header nav {
-            display: none;
-        }  
-    
-}
-
-@media all and (min-width:769px) and (max-width: 800px) {
-    
-}
-
-@media all and (min-width:801px) and (max-width: 959px) {
-  
-}
-
-@media all and (min-width:960px) and (max-width: 1024px) {
-    
-}
+    @media all and (min-width:960px) and (max-width: 1024px) {
+    }
 
 
 
