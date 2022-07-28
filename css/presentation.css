@@ -1,50 +1,114 @@
 ﻿
 
-/* presentation design for mobile screen sizes from 0 to 320px*/
-@media all and (min-width:0px) and (max-width: 320px) {
-
+@media all and (min-width:0px) and (max-width: 768px) {
     #presentation {
-        text-align:center;
-        margin:100px auto;
+        text-align: center;
         color: white;
+        margin: 50px auto;
+        width: 90%;
     }
 
     #presentation_img {
         display: none;
     }
 
-    #description {
-        width: 100%;
-        height: 100vh;
-    }
-    
+  
     #description h2 {
-            margin-top:30px;
+            margin-top: 30px;
             color: #00ffff;
     }
 
-    #description p {
+        #description p {
             font-style: italic;
             letter-spacing: 2px;
+            line-height:150%;
             width: 80%;
-            margin: 50px auto;
-    }
+            margin: 20px auto;
+        }
 
         #description button {
             background-color: #00ffff;
             padding: 10px;
-            border: 1px dashed black;
+            border: 2px solid black;
             border-radius: 50%;
             margin: 20px auto;
         }
 
-    /* design of the down arrows */
-    #description .down_arrow {
-        border: solid black;
-        border-width: 0 7px 7px 0;
-        display: inline-block;
-        padding: 7px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
+        /**design of the down arrows */
+        #description .down_arrow {
+            border: solid black;
+            border-width: 0 7px 7px 0;
+            display: inline-block;
+            padding: 7px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+}
+    /* presentation design for mobile screen sizes from 0 to 480px*/
+@media all and (min-width:0px) and (max-width: 320px) {
+
+    #presentation {
+        margin: 10px auto;
+    }
+
+    #description h1 {
+        font-size: 1.5em;
+    }
+
+    #description h2 {
+        font-size: 1.2em;
     }
 }
+
+
+@media all and (min-width:321px) and (max-width: 480px) {
+    #presentation {
+        margin: 20px auto;
+    }
+
+    #description h1 {
+        font-size: 1.8em;
+    }
+
+    #description h2 {
+        font-size: 1.5em;
+    }
+}
+
+}
+
+
+/* css the different header design for small screen sizes from 481-568px, */
+            @media all and (min-width:481px) and (max-width: 568px) {
+
+                #presentation {
+                    margin: 100px auto;
+                }
+
+                #description p {
+                    line-height: 200%;
+                    margin: 20px auto;
+                }
+
+                #description .down_arrow {
+                    border-width: 0 10px 10px 0;
+                    padding: 10px;
+                }
+            }
+            /* css header design for tablet screen sizes: 569-768px, */
+            @media all and (min-width:569px) and (max-width: 768px) {
+                #presentation {
+                    margin: 100px auto;
+                }
+
+                #description p {
+                    line-height: 200%;
+                    margin: 20px auto;
+                }
+
+                #description .down_arrow {
+                    border-width: 0 10px 10px 0;
+                    padding: 10px;
+                }
+            }
+        }
