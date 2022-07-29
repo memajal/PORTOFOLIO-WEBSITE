@@ -1,221 +1,149 @@
 ﻿
-
-@media all and (min-width:0px) and (max-width: 768px) {
-    #presentation {
-        text-align: center;
-        color: white;
-        margin: 50px auto;
-        width: 90%;
-    }
-
-    #presentation_img {
-        display: none;
-    }
-
-  
-    #description h2 {
-            margin-top: 30px;
-            color: #00ffff;
-    }
-
-        #description p {
-            font-style: italic;
-            letter-spacing: 2px;
-            line-height:150%;
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        #description button {
-            background-color: #00ffff;
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
-
-        /**design of the down arrows */
-        #description .down_arrow {
-            border: solid black;
-            border-width: 0 7px 7px 0;
-            display: inline-block;
-            padding: 7px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-}
-/* css the different presentation design for mobile screen sizes from 0 to 320px*/
-@media all and (min-width:0px) and (max-width: 320px) {
-
-    #presentation {
-        margin: 10px auto;
-    }
-
-    #description h1 {
-        font-size: 1.5em;
-    }
-
-    #description h2 {
-        font-size: 1.2em;
-    }
+/* the same used css styles for presentation part for all screen sizes*/
+#presentation {
+    color: white;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* css the different presentation design for mobile screen sizes from 321 to 480px*/
-@media all and (min-width:321px) and (max-width: 480px) {
-    #presentation {
+#description {
+    text-align: center;
+    width: 40%;
+}
+    #description h2 {
+        color: #00ffff;
+    }
+
+    #description p {
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 150%;
+    }
+
+    #description button {
+        background-color: #00ffff;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 50%;
         margin: 20px auto;
     }
 
-    #description h1 {
-        font-size: 1.8em;
+    /**design of the down arrows */
+    #description .down_arrow {
+        border: solid black;
+        border-width: 0 7px 7px 0;
+        display: inline-block;
+        padding: 7px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
     }
 
-    #description h2 {
-        font-size: 1.5em;
-    }
+#presentation_img {
+    width: 40%;
 }
 
-/* css the different presentation design for small screen sizes from 481-568px, */
-@media all and (min-width:481px) and (max-width: 568px) {
+/* the same used css styles for presentation part for mobile and tablet sizes*/
 
+@media all and (min-width:0px) and (max-width: 768px) {
   #presentation {
-         margin: 100px auto;
+     display:block;
+     text-align: center;
+     margin: 50px auto;
+     width: 90%;
   }
 
-  #description p {
-      line-height: 200%;
+    #description {
+        width: 100%;
+    }
+
+  #presentation_img {
+     display: none;
+     }
+
+   #description h2 {
+     margin-top: 30px;
+   }
+
+   #description p {
+      width: 80%;
       margin: 20px auto;
-  }
-
-  #description .down_arrow {
-      border-width: 0 10px 10px 0;
-     padding: 10px;
-  }
-
+   }
 }
 
-/* css presentation design for tablet screen sizes: 569-768px, */
- @media all and (min-width:569px) and (max-width: 768px) {
-                #presentation {
-                    margin: 100px auto;
-                }
+    /* css the different presentation design for mobile screen sizes from 0 to 320px*/
+           @media all and (min-width:0px) and (max-width: 320px) {
+            #presentation {
+              margin: 10px auto;
+            }
 
-                #description p {
-                    line-height: 200%;
-                    margin: 20px auto;
-                }
+            #description h1 {
+               font-size: 1.5em;
+             }
 
-                #description .down_arrow {
-                    border-width: 0 10px 10px 0;
-                    padding: 10px;
-                }
-  }
+             #description h2 {
+              font-size: 1.2em;
+             }
+           }
+
+     /* css the different presentation design for mobile screen sizes from 321 to 480px*/
+           @media all and (min-width:321px) and (max-width: 480px) {
+             #presentation {
+                margin: 20px auto;
+             }
+
+            #description h1 {
+                font-size: 1.8em;
+             }
+
+            #description h2 {
+                font-size: 1.5em;
+             }
+           }
+
+      /* css the different presentation design for small screen sizes from 481-568px &
+          for tablets 569-768px
+      */
+           @media all and (min-width:481px) and (max-width: 768px) {
+            #presentation {
+                margin: 100px auto;
+            }
+
+            #description p {
+                line-height: 200%;
+                margin: 20px auto;
+            }
+
+            #description .down_arrow {
+                border-width: 0 10px 10px 0;
+                padding: 10px;
+            }
+           }
+
 
 /* css presentation design for desktops */
-
 @media all and (min-width:769px) and (max-width: 959px) {
+            #description h1 {
+                font-size: 1.5em;
+            }
 
-    #presentation {
-        color: white;
-        margin: 50px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #description {
-        text-align:center;
-        width: 40%;
-    }
-
-    #description h1 {
-            font-size: 1.5em;
-    }
-
-        #description h2 {
-            color: #00ffff;
-            font-size: 1.2em;
+            #description h2 {
+                font-size: 1.2em;
+            }
         }
 
-        #description p {
-            font-style: italic;
-            letter-spacing: 2px;
-            line-height: 150%;
-        }
+ @media all and (min-width:960px) {
 
-        #description button {
-            background-color: #00ffff;
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
+            #description {
+              margin-top: 8%;
+            }
 
-        /**design of the down arrows */
-        #description .down_arrow {
-            border: solid black;
-            border-width: 0 7px 7px 0;
-            display: inline-block;
-            padding: 7px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
+            #description p {
+               line-height: 200%;
+            }
 
-    #presentation_img {
-        width: 40%;
-    }
-}
-
-
-@media all and (min-width:960px) {
-    #presentation {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #description {
-        margin-top:10%;
-        text-align: center;
-        width: 40%;
-    }
-
-        #description h1 {
-            
-        }
-
-        #description h2 {
-            color: #00ffff;
-           
-        }
-
-        #description p {
-            font-style: italic;
-            letter-spacing: 2px;
-            line-height: 200%;
-        }
-
-        #description button {
-            background-color: #00ffff;
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 50%;
-            margin: 20px auto;
-        }
-
-        /**design of the down arrows */
-        #description .down_arrow {
-            border: solid black;
-            border-width: 0 7px 7px 0;
-            display: inline-block;
-            padding: 7px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-    #presentation_img {
-        margin-top:5%;
-        width: 40%;
-    }
-}
+            #presentation_img {
+                margin-top: 2%;
+            }
+ }
