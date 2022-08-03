@@ -11,8 +11,9 @@
 
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/presentation.css" />
-    <link rel="stylesheet" media="screen"
-          href="https://fontlibrary.org//face/jellee-typeface" type="text/css" />
+    <link rel="stylesheet" href="css/about_me.css" />
+    <!-- <link rel="stylesheet" media="screen"
+          href="https://fontlibrary.org//face/jellee-typeface" type="text/css" /> -->
 </head>
 <body>
     <header>
@@ -56,71 +57,128 @@
             <img id="presentation_img" src="img/presentation.png">
         </div>
 
-
-
-
+        <hr />
         <!-- About me content that will contain information about me -->
         <div id="about_me">
             <img id="about_me_img" src="img/about_me.png">
 
-            <!-- Tab links with contents about me  -->
-            <div class="tab">
-                <button class="tablinks">Education</button>
-                <button class="tablinks">Job Related Skills</button>
-                <button class="tablinks">Other Skills</button>
+            <!-- Tab links with contents about me for mobile screen sizes -->
+            <div id="mobile_about_me">
+
+                    <button class="tablinks" onclick="Event(0)">Education</button>
+                    <div class="content">
+                        <p>
+                            Bachelor in Bussines Informatics
+                            University of Tirana, Albania
+                            <br />
+                            <br />
+                            Master of Sience in Information Systems in Economy
+                            University of Tirana, Albania
+                        </p>
+                    </div>
+
+                    <button class="tablinks" onclick="Event(1)">Job Related Skills</button>
+                    <div class="content">
+                        <p>
+                            - Able to complete the projected to scheduled time and deal with stress.
+                            <br /><br />
+                            − Ability to design and build simple websites.
+                            <br /><br />
+                            − Knowledge in HTML, CSS, JavaScript, PHP, MYSQL.
+                            <br /><br />
+                            − Knowledge of WordPress
+                        </p>
+                    </div>
+            
+
+                <button class="tablinks" onclick="Event(2)">Other Skills</button>
+                <div class="content">
+                    <p>
+                        Able to convey information clearly and concisely
+                        - Ethical and polite when talking to others
+                        - Especially skilled in producing consistently good quality of written work.
+                        <br /><br />
+                        Organisational / managerial skills
+                        - Able to plan ahead and organize my schedule with flexibility, a skill that I honed
+                        during my experienceas a freelance translator.
+                        - Highly dedicated when working, whether on personal assignment or within a
+                        bigger project.
+                        <br /><br />
+                        Personal skills/ qualities
+                        - Good communication skills with colleagues and superiors and ability to work
+                        individually and in groups.
+                        - Able to listen and answer staff questions in a professional way.
+                        - Very proficient in using the computer to complete a wide range of tasks.
+                        - Passionate about and dedicated to my job.
+                        - Hard worker. Usually able to independently find answers to different problems
+                        during development through thorough research of web reference materials
+                    </p>
+                </div>
+
             </div>
 
-            <!-- Tab content -->
-            <div id="Education" class="tabcontent">
-                <h3>Education</h3>
-                <p>
-                    Bachelor in Bussines Informatics
-                    University of Tirana, Albania
-                    2013-2015 Master of Sience in Information Systems in Economy
-                    University of Tirana, Albania
-             
-                </p>
-            </div>
+            <div id="desktop_about_me">
+                <!-- Tab links with contents about me for desktop screen sizes -->
+                <div class="tab_desktop">
+                    <button class="tablinks_desktop" onclick="Event_Desktop('Education')">Education</button>
+                    <button class="tablinks_desktop" onclick="Event_Desktop('J_R_Skills')">Job Related Skills</button>
+                    <button class="tablinks_desktop" onclick="Event_Desktop('Other_Skills')">Other Skills</button>
+                </div>
 
-            <div id="Job_Related" class="tabcontent">
-                <h3>Job Related Skills</h3>
-                <p>
-                    Able to complete the projected to scheduled time and deal with stress.
-                    − Ability to design simple mock-ups and build simple websites.
-                    − Knowledge in HTML, CSS, JavaScript, PHP, MYSQL.
-                    − Knowledge of WordPress
-                </p>
-            </div>
 
-            <div id="Other_Skills" class="tabcontent">
-                <h3>Others Skills</h3>
-                <p>
-                    Able to convey information clearly and concisely
-                    - Ethical and polite when talking to others
-                    - Especially skilled in producing consistently good quality of written work.
-                    Organisational /
-                    managerial skills
-                    - Able to plan ahead and organize my schedule with flexibility, a skill that I honed
-                    during my experienceas a freelance translator.
-                    - Highly dedicated when working, whether on personal assignment or within a
-                    bigger project.
-                    Personal skills/
-                    qualities
-                    - Good communication skills with colleagues and superiors and ability to work
-                    individually and in groups.
-                    - Able to listen and answer staff questions in a professional way.
-                    - Very proficient in using the computer to complete a wide range of tasks.
-                    - Passionate about and dedicated to my job.
-                    - Hard worker. Usually able to independently find answers to different problems
-                    during development through thorough research of web reference materials
-                </p>
-            </div>
+                <div id="Education" class="content_deskt">
+                    <p>
+                        Bachelor in Bussines Informatics
+                        University of Tirana, Albania
+                        <br />
+                        <br />
+                        Master of Sience in Information Systems in Economy
+                        University of Tirana, Albania
+                    </p>
+                </div>
 
+
+                <div id="J_R_Skills" class="content_deskt">
+                    <p>
+                        - Able to complete the projected to scheduled time and deal with stress.
+                        <br /><br />
+                        − Ability to design and build simple websites.
+                        <br /><br />
+                        − Knowledge in HTML, CSS, JavaScript, PHP, MYSQL.
+                        <br /><br />
+                        − Knowledge of WordPress
+                    </p>
+                </div>
+
+
+                <div id="Other_Skills" class="content_deskt">
+                    <p>
+                        Able to convey information clearly and concisely
+                        - Ethical and polite when talking to others
+                        - Especially skilled in producing consistently good quality of written work.
+                        <br /><br />
+                        Organisational / managerial skills
+                        - Able to plan ahead and organize my schedule with flexibility, a skill that I honed
+                        during my experienceas a freelance translator.
+                        - Highly dedicated when working, whether on personal assignment or within a
+                        bigger project.
+                        <br /><br />
+                        Personal skills/ qualities
+                        - Good communication skills with colleagues and superiors and ability to work
+                        individually and in groups.
+                        - Able to listen and answer staff questions in a professional way.
+                        - Very proficient in using the computer to complete a wide range of tasks.
+                        - Passionate about and dedicated to my job.
+                        - Hard worker. Usually able to independently find answers to different problems
+                        during development through thorough research of web reference materials
+                    </p>
+                </div>
+            </div>
 
         </div>
 
-
-
+        <button id="download_cv">Download CV</button>
+        
 
     </main>
 
